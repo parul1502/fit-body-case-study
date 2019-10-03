@@ -1,0 +1,1192 @@
+{
+  "UserProfile": [
+    {
+      "email": "abishek@gmail.com",
+      "password": "12345",
+      "firstName": "abhishek",
+      "LastName": "kapoor",
+      "Gender": null,
+      "Birthday": "08 sept",
+      "Height": "5",
+      "Activity": null,
+      "Weight": "700",
+      "BMI": " ",
+      "calories": 100,
+      "points": null,
+      "foodeaten":[
+        {
+      "date":"2019-10-01", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    },
+    {
+      "date":"2019-09-30", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    },
+    {
+      "date":"2019-09-29", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    }
+  ],
+      "exerciseDone": [
+        {
+          "date": "2019-10-01",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+        },
+        {
+          "date": "2019-09-29",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+        },
+        {
+          "date": "2019-09-30",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+        }
+      ]
+    },
+    {
+      "email": "Sumedha@gmail.com",
+      "password": "1234",
+      "firstName": "Sumedha",
+      "LastName": "rai",
+      "Gender": "Female",
+      "Birthday": "08 sept",
+      "Height": 5.3,
+      "Activity": [
+        "Primary",
+        "Secodary",
+        "high-level"
+      ],
+      "Weight": 60,
+      "BMI": " ",
+      "calories": 100,
+      "points": " ",
+      "foodeaten":[
+        {
+      "date":"2019-10-1", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    },
+    {
+      "date":"2019-09-30", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    },
+    {
+      "date":"2019-09-29", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    }
+  ],
+      "exerciseDone": [
+        {
+          "date": "2019-10-01",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+        },
+        {
+          "date": "2019-09-29",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+        },
+        {
+          "date": "2019-09-30",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+    }
+  ]
+},
+    {
+      "email": "ramesh@gmail.com",
+      "password": "1234",
+      "firstName": "Ramesh",
+      "LastName": "abc",
+      "Gender": "male",
+      "Birthday": "26 oct",
+      "Height": 5.8,
+      "Activity": [
+        "Primary",
+        "Secodary",
+        "high-level"
+      ],
+      "Weight": 70,
+      "BMI": " ",
+      "calories": 100,
+      "points": " ",
+      "foodeaten":[
+        {
+      "date":"2019-10-1", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    },
+    {
+      "date":"2019-09-30", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    },
+    {
+      "date":"2019-09-29", 
+      "foods": [
+        {
+          "id": 1,
+          "foodName": "Oats",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 3,
+          "foodName": "Sambhar",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "id": 2,
+          "foodName": "Chicken",
+          "ServingSize": [
+            "ounce",
+            "grams",
+            "pounds"
+          ],
+          "Calories": 50,
+          "Fat": 20,
+          "SaturatedFat": 10,
+          "Sodium": 20,
+          "Carbohydrates": 15,
+          "Fiber": 40,
+          "Sugar": 20,
+          "Protein": 50,
+          "Points": " "
+        },
+        {
+          "foodName": "qwerty",
+          "ServingNo": "04",
+          "Calories": "65",
+          "fat": "6",
+          "sfat": "7",
+          "carbs": "8",
+          "fiber": "9",
+          "sugar": "9",
+          "protein": "06",
+          "sodium": "6",
+          "id": 10
+        }]
+    }
+  ],
+      "exerciseDone": [
+        {
+          "date": "2019-10-01",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+        },
+        {
+          "date": "2019-09-29",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+        },
+        {
+          "date": "2019-09-30",
+          "exercises": [
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 2,
+          "exerciseName": "Pull-ups",
+          "minutes": "5",
+          "calories_burned": "400",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        },
+        {
+          "id": 4,
+          "exerciseName": "Running",
+          "minutes": "10",
+          "calories_burned": "1500",
+          "category": "Cardio"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 3,
+          "exerciseName": "Squats",
+          "minutes": "10",
+          "calories_burned": "800",
+          "category": "Strength"
+        },
+        {
+          "id": 1,
+          "exerciseName": "Push-ups",
+          "minutes": "5",
+          "calories_burned": "500",
+          "category": "Strength"
+        }
+      ]
+      
+    }
+  ]
+}
+  ]
+}

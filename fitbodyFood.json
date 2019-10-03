@@ -1,0 +1,199 @@
+{
+  "Food": [
+  {
+  "id": 1,
+  "foodName": "Oats",
+  "ServingSize": [
+  "ounce",
+  "grams",
+  "pounds"
+  ],
+  "Calories": 50,
+  "Fat": 20,
+  "SaturatedFat": 10,
+  "Sodium": 20,
+  "Carbohydrates": 15,
+  "Fiber": 40,
+  "Sugar": 20,
+  "Protein": 50,
+  "Points":  50 
+  },
+  {
+  "id": 2,
+  "foodName": "Chicken",
+  "ServingSize": [
+  "ounce",
+  "grams",
+  "pounds"
+  ],
+  "Calories": 50,
+  "Fat": 20,
+  "SaturatedFat": 10,
+  "Sodium": 20,
+  "Carbohydrates": 15,
+  "Fiber": 40,
+  "Sugar": 20,
+  "Protein": 50,
+  "Points": 75
+  },
+  {
+  "id": 3,
+  "foodName": "Mix Veg",
+  "ServingSize": [
+  "ounce",
+  "grams",
+  "pounds"
+  ],
+  "Calories": 70,
+  "Fat": 50,
+  "SaturatedFat": 30,
+  "Sodium": 30,
+  "Carbohydrates": 35,
+  "Fiber": 50,
+  "Sugar": 10,
+  "Protein": 80,
+  "Points": 100
+  },
+  {  
+    "id": 4,
+    "foodName": "Roasted Chicken",
+    "ServingSize": [
+    "ounce",
+    "grams",
+    "pounds"
+    ],
+    "Calories": 50,
+    "Fat": 20,
+    "SaturatedFat": 10,
+    "Sodium": 20,
+    "Carbohydrates": 15,
+    "Fiber": 40,
+    "Sugar": 20,
+    "Protein": 50,
+    "Points": 95
+  },
+  {
+    "foodName": "Salad",
+    "ServingSize": [
+    "ounce",
+    "grams",
+    "pounds"
+    ],
+    "Calories": 50,
+    "Fat": 20,
+    "SaturatedFat": 10,
+    "Sodium": 20,
+    "Carbohydrates": 15,
+    "Fiber": 40,
+    "Sugar": 20,
+    "Protein": 50,
+    "Points": 78,
+    "id": 5
+  },
+  {
+  "foodName": "Veg thali",
+  "ServingNo": 2,
+  "Calories": 26,
+  "Fat": 50,
+  "SaturatedFat": 38,
+  "Carbohydrates": 15,
+  "Fiber": 56,
+  "Sugar": 40,
+  "Protein": 80,
+  "Sodium": 15,
+  "id": 6,
+  "Points": 50
+  }
+  ],
+  "Exercise": [
+  {
+  "id": 1,
+  "exerciseName": "Push-ups",
+  "minutes": "5",
+  "calories_burned" : "500",
+  "category" : "Strength"
+  
+  },
+  {
+  "id": 2,
+  "exerciseName": "Pull-ups",
+  "minutes": "5",
+  "calories_burned" : "400",
+  "category" : "Strength"
+  
+  },
+  {
+  "id": 3,
+  "exerciseName": "Squats",
+  "minutes": "10",
+  "calories_burned" : "800",
+  "category" : "Strength"
+  
+  },
+  {
+  "id": 4,
+  "exerciseName": "Running",
+  "minutes": "10",
+  "calories_burned" : "1500",
+  "category" : "Cardio"
+  
+  },
+  {
+  "id": 5,
+  "exerciseName": "Jogging",
+  "minutes": "10",
+  "calories_burned" : "1000",
+  "category" : "Cardio"
+  },
+  {
+  "id": 6,
+  "exerciseName": "Bicycling",
+  "minutes": "10",
+  "calories_burned" : "1200",
+  "category" : "Cardio"
+  },
+  {
+  "id": 7,
+  "exerciseName": "Skipping Rope",
+  "minutes": "5",
+  "calories_burned" : "750",
+  "category" : "Cardio"
+  },
+  {
+    "id": 8,
+    "exerciseName": "Walking",
+    "minutes": "15",
+    "calories_burned" : "50",
+    "category" : "Aerobic"
+    },
+    {
+      "id": 9,
+      "exerciseName": "Hiking",
+      "minutes": "20",
+      "calories_burned" : "550",
+      "category" : "Aerobic"
+      },
+      {
+        "id": 10,
+        "exerciseName": "Swimmimg",
+        "minutes": "30",
+        "calories_burned" : "200",
+        "category" : "Aerobic"
+        },
+        {
+          "id": 11,
+          "exerciseName": "Sprint",
+          "minutes": "10",
+          "calories_burned" : "70",
+          "category" : "Aerobic"
+          },
+          {
+            "id": 12,
+            "exerciseName": "Weight Training",
+            "minutes": "25",
+            "calories_burned" : "75",
+            "category" : "Aerobic"
+            }
+  ]
+  }
+  

@@ -1,0 +1,28 @@
+const UserProfile = require('../modal/userprofile');
+const Food = require('../modal/food');
+const Exercise = require('../modal/exercise');
+class ProductsRepository{
+    save(food)
+    {
+       console.log(food);
+       return Food.create(food).then(f=>f).catch(error=> console.log(error));
+    }
+    updateProfile(profile, email)
+    {
+      return UserProfile.findOneAndUpdate({"email":email},{$set:profile}).then(profile => profile)
+    }
+    getAllUserProfiles(){
+       return UserProfile.find({}).then(userprofile=> userprofile);
+    }
+    getAllFoods(){
+      return Food.find({}).then(food=> food);
+   }
+   getAllExercises(){
+    return Exercise.find({}).then(exercise=> exercise);
+ }
+    getAllUserProfilesByEmail(email){
+        return UserProfile.findOne({"email":email}).then(userprofile=>userprofile);
+    }
+    
+}
+module.exports = new ProductsRepository();

@@ -1,0 +1,23 @@
+const fitbodyRepository=require('../repository/fitbodyRepository');
+module.exports=(app) =>{  //app is an instance of 
+    app.get('/userprofiles',(req, res)=>{
+        fitbodyRepository.getAllUserProfiles().then(userprofile=> res.json(userprofile))
+    })
+    app.get('/userprofiles/:id',(req, res)=>{
+        fitbodyRepository.getAllUserProfilesByEmail(req.params.id).then(userprofile=> res.json(userprofile))
+    })
+    app.put('/userprofiles/:id',(req, res)=>{
+        fitbodyRepository.updateProfile(req.body, req.params.id).then(userprofile=> res.json(userprofile))
+    })
+    app.get('/foods',(req, res)=>{
+        fitbodyRepository.getAllFoods().then(foods=> res.json(foods))
+    })
+    app.get('/exercises',(req, res)=>{
+        fitbodyRepository.getAllExercises().then(exercises=> res.json(exercises))
+    })
+    app.post('/foods',(req, res)=>{
+        fitbodyRepository.save(req.body).then(foods=> res.json(foods))
+    })
+    
+    
+}

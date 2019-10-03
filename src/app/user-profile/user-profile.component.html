@@ -1,0 +1,196 @@
+<div class="card">
+        <div style="font-weight: bold; text-align: center">
+        <h2>User Profile</h2>
+        </div>
+        
+        <div class="offset-md-6">
+        <form (ngSubmit)="saveProfile()" [formGroup]="profileForm">
+        
+        <div class="form-group row mb-3">
+        <label class="col-md-2 col-form-label">Email</label>
+        <div class="col-md-3">
+        <input class="form-control" id="email" type="text"
+        placeholder="Email (required)"
+        formControlName="email"
+         />
+        
+        </div>
+        </div>
+        
+        <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label">CurrentPassword</label>
+        <div class="col-md-3">
+        <input class="form-control"
+        id="password"
+        type="password"
+        placeholder="password (required)"
+        formControlName="password"
+         />
+        
+        </div>
+        </div>
+        
+        <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label">New Password</label>
+        
+        <div class="col-md-3">
+        <input class="form-control"
+        id="New Password"
+        type="password"
+        placeholder="New Password"
+        [(ngModel)]='newPassword'
+        [ngModelOptions]="{standalone: true}"
+         />
+        
+        </div>
+        </div>
+
+        <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label"
+        for="descriptionId">firstName</label>
+        
+        <div class="col-md-3">
+        <input class="form-control"
+        id="firstname"
+        placeholder="FirstName"
+        rows=3
+        formControlName="firstName"
+        />
+        
+        </div>
+        </div>
+        <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label"
+            for="descriptionId">LastName</label>
+            <div class="col-md-3">
+            <input class="form-control"
+            id="lastname"
+            placeholder="LastName"
+            rows=3
+            formControlName="LastName"
+            />
+           
+            </div>
+            </div>
+        
+            <div class="form-group row mb-2">
+                <label class="col-md-2 col-form-label"
+                for="descriptionId">Gender</label>
+                <div class="col-md-3">
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                </div>
+                </div>
+
+            <div class="form-group row mb-2">
+                <label class="col-md-2 col-form-label"
+                for="descriptionId">Birthday</label>
+                
+                <div class="col-md-3">
+                <input class="form-control"
+                id="birthday"
+                placeholder=""
+                rows=3
+                formControlName="Birthday"
+                />
+                
+                </div>
+                </div>
+
+                <div class="form-group row mb-2">
+                    <label class="col-md-2 col-form-label"
+                    for="descriptionId">Height-in-inches</label>
+                    
+                    <div class="col-md-3">
+                    <input class="form-control"
+                    id="height"
+                    rows=3
+                    formControlName="Height"
+                    />
+                    
+                    </div>
+                    </div>
+
+                    <div class="form-group row mb-2">
+                        <label class="col-md-2 col-form-label"
+                        for="descriptionId">Activity</label>
+                        <div class="col-md-3">
+                            <select >
+                                <option >Secondary</option>
+                                <option >Primary</option>
+                                <option >High-Level</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                    <div class="form-group row mb-2">
+                        <label class="col-md-2 col-form-label"
+                        for="descriptionId">Current weight</label>
+                        
+                        <div class="col-md-3">
+                        <input class="form-control"
+                        id="weight"
+                        rows=3
+                        formControlName="Weight"
+                        />
+                        
+                        </div>
+                        </div>
+                        <div class="form-group row mb-2">
+                            <label class="col-md-2 col-form-label"
+                            for="bmi">BMI</label>
+                            
+                            <div class="col-md-3">
+                            <input class="form-control"
+                            id="bmi"
+                            rows=3
+                            formControlName="BMI"
+                            />
+                          
+                            </div>
+                            </div>
+
+                            <div class="form-group row mb-2">
+                                <label class="col-md-2 col-form-label"
+                                for="calories">Calories needed daily to maintain weight</label>
+                                
+                                <div class="col-md-3">
+                                <input class="form-control"
+                                id="calories"
+                                rows=3
+                                formControlName="calories"
+                                />
+                               
+                                </div>
+                                </div>
+                                <div class="form-group row mb-2">
+                                    <label class="col-md-2 col-form-label"
+                                    for="point">Daily Points</label>
+                                    
+                                    <div class="col-md-3">
+                                    <input class="form-control"
+                                    id="points"
+                                    rows=3
+                                    formControlName="points"/>
+                                   
+                                    </div>
+                                    </div>
+
+        <div class="form-group row mb-3">
+        <div class="offset-md-2 col-md-4">
+        <button class="btn btn-primary mr-3"
+        style="width:120px;"
+        type="submit"
+        >
+        Update Profile
+        </button>
+        </div>
+        </div>
+        </form>
+        </div>
+        
+        <div class="alert alert-danger"
+        *ngIf="errorMessage">{{errorMessage}}
+        </div>
+        </div>
+        

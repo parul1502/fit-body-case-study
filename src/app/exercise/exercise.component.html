@@ -1,0 +1,122 @@
+<div>
+        <div style="text-align: center"><h2>Exercises Performed</h2></div>
+        
+        <br/>
+        
+        <div style="text-align: center">
+        <h5><strong>Exercise Performed On: </strong>
+        <input type="date" [(ngModel)]="dateFetch" (change)="display()"/></h5>
+        </div>
+        <br/>
+        
+        <div class="form-group row container">
+        <div class="col-md-4">
+        
+        </div>
+        <div class="col-md-3">
+        <label>
+        Recently Performed Exercises
+        </label>
+        
+        <br/>
+        
+        <select [(ngModel)]='itemR'>
+        <option>Select an exercise</option>
+        <option *ngFor = 'let e of exercise' [value]='e.exerciseName'>{{e.exerciseName}}</option>
+        </select>
+        
+        <br/>
+        
+        <button class="btn btn-primary mr-3" (click) = 'addExercise()'>Add Exercise</button>
+        </div>
+        
+        <div class="col-md-3">
+        <label>
+        Browse Exercises by Category
+        </label>
+        
+        <br/>
+        
+        <select [(ngModel)]='item' (change)="CExercise()">
+        <option>Select category</option>
+        <option *ngFor='let c of exerciseCat' [value]='c'>{{c}}</option>
+        </select>
+        
+        <br/>
+        
+        <select [(ngModel)]='itemR'>
+        <option>Select an exercise</option>
+        <option *ngFor='let ec of exerciseCa' [value]='ec.exerciseName'>{{ec.exerciseName}}</option>
+        </select>
+        
+        <br/>
+        
+        <button class="btn btn-primary mr-3" (click) = 'addExercise()'>Add Exercise</button>
+        </div>
+        <div class="col-md-2">
+        <input class="form-control" type="text" style="width: 250px" [(ngModel)]='searchExercise'/>
+        <button class="btn btn-primary mr-3" data-toggle="modal" data-target="#myModal" (click) = "findExercise()">
+        Search Exercise
+        </button>
+        </div>
+        
+        </div> <!-- Container Ends -->
+        
+        <div class='table-responsive'>
+        <table class='table'>
+        <thead class="container">
+        <tr class="row">
+        <th class="col-md-4">Exercise</th>
+        <th class="col-md-2">Minutes</th>
+        <th class="col-md-2">Calories Burned</th>
+        <th class="col-md-2">Edit</th>
+        <th class="col-md-2">Delete</th>
+        </tr>
+        </thead>
+        <tbody class="container">
+        <tr *ngFor = 'let ex of exerciseDetails; let i = index' class="row">
+        <td class="col-md-4" >{{ex.exerciseName}}</td>
+        <td class="col-md-2">{{ex.minutes}}</td>
+        <td class="col-md-2">{{ex.calories_burned}}</td>
+        <td class="col-md-2"><button><span class="glyphicon glyphicon-pencil"></span></button></td>
+        <td class="col-md-2" (click)="deleteItem(i)"><button><span class="glyphicon glyphicon-trash"></span></button></td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        
+        </div>
+        
+        <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Search Exercises</h4>
+        </div>
+        <div class="modal-body">
+        <p>Click the "ADD" button to add an exercise to the list of exercises</p>
+        <table class="table-responsive">
+        <thead>
+        <tr>
+        <th><strong>Name</strong></th>
+        <th></th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr *ngFor = 'let exer of searchedExercise'>
+        <td>{{ exer.exerciseName }}</td>
+        <td (click)="add(exer)"><button><span class="glyphicon glyphicon-plus pull-right"></span></button></td>
+        </tr>
+        </tbody>
+        
+        </table>
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+        </div>
+        </div>
+        </div>

@@ -1,0 +1,108 @@
+<div>
+        <div style="text-align: center"><h2>Food Eaten</h2></div>
+        <br/>
+        
+        <div style="text-align: center">
+        <h5><strong>Food Eaten On: </strong>
+        <input type="date" [(ngModel)]="dateFetch" (change)="display()"/></h5>
+        </div>
+        <br/>
+
+        <div class="form-group row mb-2">
+                <select class="col-md-2" [(ngModel)]='item'>
+                <option>Choose your food</option>
+                <option *ngFor = 'let f of food'  [value]='f.foodName'>{{f.foodName}}</option>
+                </select>
+                <div class="col-md-2">
+                <button class="btn btn-primary mr-3" (click) = 'addFood()'>Add Food</button>
+        </div>
+        <div class="col-md-2">
+                <input class="form-control" type="text" [(ngModel)] = 'searchFood' />
+        </div>
+        <div class="col-md-2">
+                <button class="btn btn-primary mr-3" data-toggle="modal" data-target="#myModal" (click) = 'findfood()'>Search Food</button>
+        </div>
+        <div class="col-md-2">
+                <button class="btn btn-primary mr-3" [routerLink]="['/food', 'create']">Create Food</button>
+        </div>
+        </div>
+        <div class='table-responsive'>
+                        <table class='table'>
+                        <thead>
+                        <tr>
+                        <th>Food</th>
+                        <th>No. of servings</th>
+                        <th>Serving Size</th>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Sat. Fat</th>
+                        <th>Sodium</th>
+                        <th>Carbs.</th>
+                        <th>Fiber</th>
+                        <th>Sugar</th>
+                        <th>Protein</th>
+                        <th>Points</th>
+                        <th class="col-md-2">Edit</th>
+                        <th class="col-md-2">Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor='let foo of foodDetails let i = index'>
+                        <td>{{foo.foodName}}</td>
+                        <td></td>
+                        <td>
+                         <select >
+                                <option>Serving Size</option>
+                                <option *ngFor = 'let f of foo.ServingSize'  [value]='f'>{{f}}</option> 
+                         </select>
+                        </td>
+                        <td>{{foo.Calories}}</td>
+                        <td>{{foo.Fat}}</td>
+                        <td>{{foo.SaturatedFat}}</td>
+                        <td>{{foo.Sodium}}</td>
+                        <td>{{foo.Carbohydrates}}</td>
+                        <td>{{foo.Fiber}}</td>
+                        <td>{{foo.Sugar}}</td>
+                        <td>{{foo.Protein}}</td>
+                        <td>{{foo.Points}}</td>
+                        <td class="col-md-2"><button><span class="glyphicon glyphicon-pencil"></span></button></td>
+                        <td class="col-md-2" (click)="deleteItem(i)"><button><span class="glyphicon glyphicon-trash"></span></button></td>
+                        </tr>
+                        <!-- <tr>
+                                <th>{{foodDetails.map(food => food.Calories).reduce((tot, amt) => tot + amt)}}</th>
+                        </tr> -->
+                        
+                        </tbody>
+                        </table>
+                        </div>
+                        <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">   
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Search Food</h4>
+                        </div>
+                        <div class="modal-body">
+                        <p>Click the "ADD" button to add Food</p>
+                        <table class='table'>
+                        <thead>
+                        <tr>
+                                <th>Name</th>
+                                <th></th>
+                        </tr>
+                        </thead>   
+                        <tbody>
+                        <tr *ngFor = 'let ffood of searchedFood; let i = index'>
+                                <td>{{ ffood.foodName }}</td>
+                                <td (click)="add(ffood)"><button><span class="glyphicon glyphicon-plus pull-right"></span></button></td>  
+                        </tr>                        
+                        </tbody>
+                    </table>
+               </div>
+        </div>
+                                            
+</div>
+</div>
+                                    
+</div>

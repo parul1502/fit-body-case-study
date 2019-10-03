@@ -1,0 +1,28 @@
+<div *ngIf="!isUserLoggedIn">
+        <nav class='navbar navbar-default' >
+        <div class='container-fluid'>
+        <a class='navbar-brand'>{{pageTitle}}</a>
+        <ul class='nav navbar-nav'>
+        <li><a [routerLink]="['/Login']">Fitness.Jiffy</a></li>
+        </ul>
+        </div>
+        </nav>
+        </div>
+        
+        <div *ngIf="isUserLoggedIn">
+                <nav class='navbar navbar-default' >
+                <div class='container-fluid'>
+                <a class='navbar-brand'>{{pageTitle}}</a>
+                <ul class='nav navbar-nav'>
+                <li><a [routerLink]="['/profile']">Profile</a></li>
+                <li><a [routerLink]="['/food']">Food</a></li>
+                <li><a [routerLink]="['/exercise']">Exercise</a></li>
+                <li><a [routerLink]="['/report']">Report</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" (ngSubmit)="logout()">
+                        {{email}}
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+                      </form>
+                </div>
+                </nav>
+        </div>

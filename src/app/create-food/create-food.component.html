@@ -1,0 +1,135 @@
+<div class="card">
+    <div style="font-weight: bold; text-align: center">
+    <h2>You are Creating a brand new food</h2>
+    </div>
+    
+    <div class="offset-md-6">
+    <form novalidate
+    [formGroup]="createfood" (ngSubmit)="createFood()">
+    <div class="form-group row mb-3">
+    <label class="col-md-2 col-form-label">Name</label>
+    <div class="col-md-6">
+    <input class="form-control"
+    id="foodName" type="text"
+    placeholder="Food Name"
+    formControlName="foodName"/>
+    </div>
+    </div>
+    
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Daily Serving Type</label>
+    <div class="col-md-3">
+    <select>
+        <option></option>
+    </select>
+    </div>
+    </div>
+    
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Default Serving qty</label>
+    <div class="col-md-3">
+        <input class="form-control"
+        id="firstname"
+        placeholder="Serving number"
+        rows=3
+        formControlName="ServingNo"/>
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Calories</label>
+    <div class="col-md-3">
+    <input class="form-control"
+    id="firstname"
+    placeholder="Calories"
+    rows=3
+    formControlName="Calories"/>
+    </div>
+    </div>
+
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Fat</label>
+    <div class="col-md-3">
+    <input class="form-control"
+    id="fat"
+    placeholder="Fat"
+    rows=3
+    formControlName="Fat"/>
+    </div>
+    </div>
+    
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label"
+    >Saturated Fat</label>
+    <div class="col-md-3">
+    <input class="form-control"
+     id="SaturatedFat"
+     placeholder="Saturated Fat"
+    rows=3
+    formControlName="SaturatedFat"/>                   
+    </div>
+    </div>
+
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Carbs.</label>        
+    <div class="col-md-3">
+    <input class="form-control"
+    id="carbs"
+    placeholder="Carbohydrates"
+    rows=3
+    formControlName="Carbohydrates"/>
+    </div>
+    </div>
+
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Fiber</label>   
+    <div class="col-md-3">
+    <input class="form-control"
+    id="Fiber"
+    placeholder="Fiber"
+    rows=3
+    formControlName="Fiber"/>
+    </div>
+    </div>
+
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Sugar</label>
+    <div class="col-md-3">
+    <input class="form-control"
+    id="Sugar"
+    placeholder="Sugar"
+    rows=3
+    formControlName="Sugar"/>
+    </div>
+    </div>
+                    
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Protein</label>                        
+    <div class="col-md-3">
+    <input class="form-control"
+    id="protein" placeholder="Protein" rows=3 formControlName="Protein"/>
+    </div>
+    </div>
+    <div class="form-group row mb-2">
+    <label class="col-md-2 col-form-label">Sodium</label>                   
+    <div class="col-md-3">
+    <input class="form-control"
+    id="sodium"
+    placeholder="Sodium"
+    rows=3
+    formControlName="Sodium"/>
+    </div>
+    </div>
+
+    <div class="form-group row mb-3">
+    <div class="offset-md-2 col-md-4">
+    <button class="btn btn-dark mr-3"
+    style="width:120px;"
+    type="submit">
+    submit
+    </button>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>

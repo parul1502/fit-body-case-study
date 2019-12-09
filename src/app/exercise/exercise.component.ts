@@ -30,6 +30,8 @@ deleteExercise: string;
 dateFetch: string;
 newDateExercise: IDateExercise;
 isDate: boolean;
+totalMinutes: number;
+totalCaloriesBurned: number;
   ngOnInit() {
     this._fitbodyService.getExercise().subscribe((exercise: IExercise[]) => {
       this.exercise = exercise;
@@ -41,6 +43,8 @@ isDate: boolean;
       console.log(this.exerciseCat);
       });
     this.email = localStorage.getItem('email');
+    this.totalMinutes = 0;
+    this.totalCaloriesBurned = 0;
     this.getProfile(this.email);
       }
 
@@ -75,6 +79,10 @@ isDate: boolean;
         if (this.dateFetch === date1.date) {
          this.exerciseDetails = date1.exercises;
          this.isDate = true;
+         // tslint:disable-next-line: max-line-length
+         this.totalMinutes = this.exerciseDetails.length === 0 ? 0 : this.exerciseDetails.map(ex => ex.minutes).reduce((tot, amt) => tot + amt);
+         // tslint:disable-next-line: max-line-length
+         this.totalCaloriesBurned = this.exerciseDetails.length === 0 ? 0 : this.exerciseDetails.map(ex => ex.calories_burned).reduce((tot, amt) => tot + amt);
         }
     });
       if (this.isDate !== true) {
@@ -82,6 +90,8 @@ isDate: boolean;
         date: this.dateFetch,
         exercises: []
       });
+        this._fitbodyService.updateProfile(this.profile, this.email)
+  .subscribe(data => console.log(data));
   }
       console.log(this.exerciseDetails);
     });
@@ -89,12 +99,17 @@ isDate: boolean;
     }
 
       addExercise = () => {
+        if (this.dateFetch === undefined) {
+          return alert('Kindly select  a date');
+       }
         this.profile.exerciseDone.filter((date1) => {
           console.log(date1.date);
           if (this.dateFetch === date1.date) {
             this.exercise.forEach(m => {
               if (m.exerciseName[0] === this.itemR) {
                 this.exerciseDetails.push(m);
+                this.totalCaloriesBurned = this.totalCaloriesBurned + m.calories_burned;
+                this.totalMinutes = this.totalMinutes + m.minutes;
               }
             });
             console.log(this.exerciseDetails);
@@ -108,19 +123,21 @@ isDate: boolean;
 
       findExercise() {
       this.searchedExercise = this.exercise.filter((foo) => foo.exerciseName.indexOf(this.searchExercise) !== -1);
-      console.log(this.searchedExercise);
+      console.log(this.searchedExercise );
       }
 
       deleteItem = (index: number) => {
         this.profile.exerciseDone.filter((date1) => {
           console.log(date1.date);
           if (this.dateFetch === date1.date) {
-           this.exerciseDetails.splice(index, 1);
-           console.log(this.exerciseDetails);
-           date1.exercises = this.exerciseDetails;
-           this._fitbodyService.updateProfile(this.profile, this.email)
+            this.totalCaloriesBurned = this.totalCaloriesBurned - this.exerciseDetails[index].calories_burned;
+            this.totalMinutes = this.totalMinutes - this.exerciseDetails[index].minutes;
+            this.exerciseDetails.splice(index, 1);
+            console.log(this.exerciseDetails);
+            date1.exercises = this.exerciseDetails;
+            this._fitbodyService.updateProfile(this.profile, this.email)
       .subscribe(data => console.log(data));
-           console.log(this.profile.exerciseDone);
+            console.log(this.profile.exerciseDone);
           }
       });
         }
@@ -128,5 +145,13 @@ isDate: boolean;
         add(exe1) {
           this.itemR = exe1.exerciseName[0];
           this.addExercise();
+        }
+
+        editExercise(val, exer) {
+          console.log(exer.minutes);
+          exer.minutes = val;
+          this._fitbodyService.updateProfile(this.profile, this.email)
+      .subscribe(data => console.log(data));
+          console.log(exer.minutes);
         }
 }

@@ -8,12 +8,14 @@ import { CreatefoodguardService } from './guard/createfoodguard.service';
 import { ProfileguardService } from './guard/profileguard.service';
 import { LoginguardService } from './guard/loginguard.service';
 import { ExerciseComponent } from './exercise/exercise.component';
+import { ReportComponent } from './report/report.component';
 
 const routes: Routes = [
   {path: 'Login', component: LoginComponent},
   {path: 'profile', canActivate: [LoginguardService], canDeactivate: [ProfileguardService], component: UserProfileComponent},
   {path: 'food', canActivate: [LoginguardService], component: FoodComponent},
   {path: 'exercise', canActivate: [LoginguardService], component: ExerciseComponent},
+  {path: 'report', canActivate: [LoginguardService], component: ReportComponent},
   {path: 'food/create', canDeactivate: [CreatefoodguardService], component: CreateFoodComponent}
 ];
 

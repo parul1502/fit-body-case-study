@@ -32,7 +32,7 @@ export class FitbodyService {
     createProduct(food: IFood): Observable<IFood> {
       const headers = new HttpHeaders({'Content-Type': 'application/json'});
       return this._http.post<IFood>('http://localhost:4000/Foods', food , {headers})
-.pipe(tap (data => console.log('Create food is scucessfull ' + JSON.stringify(data))), catchError(this.handleError)
+.pipe(tap (data => alert('New food created')), catchError(this.handleError)
 );
     }
 

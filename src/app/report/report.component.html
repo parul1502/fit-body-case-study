@@ -1,0 +1,101 @@
+<div style="background-color: #ec5f5f">
+        <div style="text-align: center; padding-top: 1%"><h1>Report</h1></div>
+        <div style="padding-bottom: 1%">
+            <div>
+                <div class="row mb-2" style="padding-left:40%">
+                <h4 class="col-md-3" style="font-weight: bold">Current Weight</h4>
+                <h3 class="col-md-2">{{weight}}</h3>
+                </div>
+                
+                <div class="row mb-2" style="padding-left:40%">
+                <h4 class="col-md-3" style="font-weight: bold">Height</h4>
+                <h3 class="col-md-2">{{height}}</h3>
+                </div>
+
+                <div class="row mb-2" style="padding-left:40%">
+                <h4 class="col-md-3" style="font-weight: bold">BMI</h4>
+                <h3 class="col-md-2">{{bmi}}</h3>
+                </div>
+     
+                <div class="row mb-2" style="padding-left:40%">
+                <h4 class="col-md-3" style="font-weight: bold">Message</h4>
+                <h3 class="col-md-3">{{message}}</h3>
+                </div>
+
+                </div>
+                <div style="text-align: center"><h1>Recent Activities</h1></div>
+                <div> 
+                <h3 style="text-align: center">Food Eaten</h3>
+                <div class='table-responsive'>
+                <table class='table table-striped'>
+                <thead>
+                <tr>
+                <th>Food</th>
+                <th>Calories</th>
+                <th>Fat</th>
+                <th>Sat. Fat</th>
+                <th>Sodium</th>
+                <th>Carbs.</th>
+                <th>Fiber</th>
+                <th>Sugar</th>
+                <th>Protein</th>
+                <th>Points</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor='let foo of food'>
+                <td>{{foo.foodName}}</td>
+                <td>{{foo.Calories}}</td>
+                <td>{{foo.Fat}}</td>
+                <td>{{foo.SaturatedFat}}</td>
+                <td>{{foo.Sodium}}</td>
+                <td>{{foo.Carbohydrates}}</td>
+                <td>{{foo.Fiber}}</td>
+                <td>{{foo.Sugar}}</td>
+                <td>{{foo.Protein}}</td>
+                <td>{{foo.Points}}</td>
+                </tr>
+                <tr>
+                <th>Points</th>
+                <th>{{totalCalories}}</th>
+                <th>{{totalFat}}</th>
+                <th>{{totalSaturatedFat}}</th>
+                <th>{{totalSodium}}</th>
+                <th>{{totalCarbohydrates}}</th>
+                <th>{{totalFiber}}</th>
+                <th>{{totalSugar}}</th>
+                <th>{{totalProtein}}</th>
+                <th>{{totalPoints}}</th> 
+                </tr>                
+                </tbody>
+                </table>
+                </div>
+                <h3 style="text-align: center">Exercises Performed</h3>
+                                
+        <div class='table-responsive'>
+                <table class='table table-striped'>
+                <thead class="container">
+                <tr class="row">
+                <th class="col-md-4">Exercise</th>
+                <th class="col-md-2">Minutes</th>
+                <th class="col-md-2">Calories Burned</th>
+                </tr>
+                </thead>
+                <tbody class="container">
+                <tr *ngFor = 'let ex of exercise' class="row">
+                <td class="col-md-4" >{{ex.exerciseName}}</td>
+                <td class="col-md-2">{{ex.minutes}}</td>
+                <td class="col-md-2">{{ex.calories_burned}}</td>
+                </tr>
+                <tr class="row">
+                <th class="col-md-4">Points</th>
+                <th class="col-md-2">{{totalMinutes}}</th>
+                <th class="col-md-2">{{totalCaloriesBurned}}</th>             
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                <h3 style="text-align: center">Stay Fit And Healthy</h3>
+                </div>
+            </div>
+</div>

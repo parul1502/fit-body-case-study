@@ -1,9 +1,9 @@
-<div class="card">
+<div class="card" style="background-color: #ec5f5f">
         <div style="font-weight: bold; text-align: center">
         <h2>User Profile</h2>
         </div>
         
-        <div class="offset-md-6">
+        <div class="offset-md-6" style="margin-left: 37%">
         <form (ngSubmit)="saveProfile()" [formGroup]="profileForm">
         
         <div class="form-group row mb-3">
@@ -99,7 +99,7 @@
 
                 <div class="form-group row mb-2">
                     <label class="col-md-2 col-form-label"
-                    for="descriptionId">Height-in-inches</label>
+                    for="descriptionId">Height-in-cm</label>
                     
                     <div class="col-md-3">
                     <input class="form-control"
@@ -179,7 +179,7 @@
         <div class="form-group row mb-3">
         <div class="offset-md-2 col-md-4">
         <button class="btn btn-primary mr-3"
-        style="width:120px;"
+        style="width:120px; background-color: black"
         type="submit"
         >
         Update Profile

@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
     if (this.profileData) {
       this.eventAggregator.publish(this.profileData.email);
       localStorage.setItem('email', this.profileData.email);
-      this.router.navigate(['./profile']);
+      this.router.navigate(['./exercise']);
       } else {
         alert('Invalid Login Data');
       }

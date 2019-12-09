@@ -1,6 +1,6 @@
 export interface IFood {
     foodName: string;
-    ServingSize: string[];
+    ServingNo: number;
     Calories: number;
     Fat: number;
     SaturatedFat: number;
@@ -9,5 +9,5 @@ export interface IFood {
     Fiber: number;
     Sugar: number;
     Protein: number;
-    Points: string;
+    Points: number;
   }

@@ -1,11 +1,12 @@
-<div class="card">
-    <div class="card-body">
+<div class="card" style="background-color: #ec5f5f">
+    <div class="card-body" style="padding-top: 2%; padding-bottom: 1%">
+    <span class="glyphicon glyphicon-user" style="font-size:500%; margin-left: 45%"></span>
     <form novalidate
     (ngSubmit)="checkData()"
-    [formGroup]="LoginForm">
+    [formGroup]="LoginForm" style="margin-left: 35%; padding-top: 1%">
     <div class="form-group row mb-2">
     <label class="col-md-2 col-form-label">User Name</label>
-    <div class="col-md-8">
+    <div class="col-md-3">
     <input class="form-control"
     id="username" type="text"
     placeholder="Name (required)" formControlName="userName" [(ngModel)]='Email'/>
@@ -15,7 +16,7 @@
     <div class="form-group row mb-2">
     <label class="col-md-2 col-form-label"
     for="productCodeId">Password</label>
-    <div class="col-md-8">
+    <div class="col-md-3">
     <input class="form-control"
     id="password" type="password"
     placeholder="password" formControlName="password" [(ngModel)]='password'/>
@@ -25,7 +26,7 @@
     <div class="form-group row mb-2">
     <div class="offset-md-2 col-md-4">
     <button class="btn btn-primary mr-3"
-    style="width:80px;"
+    style="width:80px; background-color: black"
     type="submit">
     Sign In
     </button>
